@@ -1,48 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background:linear-gradient(to right, rgb(84, 223, 147),rgb(52, 52, 180)
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
+body {
+  background: linear-gradient(to right, rgb(84, 223, 147), rgb(52, 52, 180));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
-.card{
-  height: 500px;
-  width: 900px;
+.card {
+  min-height: 500px;
+  max-width: 900px;
   padding: 20px;
   border: 2px rgb(184, 106, 17) solid;
   text-align: center;
   border-radius: 20px;
 }
-h1{
-    font-size:60px;
-    font-weight: bolder;
-    margin-bottom: 40px;
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin-bottom: 40px;
 }
-p{
-    font-size:30px;
-    margin-bottom: 10px;
-    font-weight: 700;
+p {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
-#user{
-    padding: 10px;
-    height: 53px;
-    color: gray;
-    font-size: 30px;
-    border-radius: 20px;
-    border: none;
+#user {
+  padding: 10px;
+  height: 53px;
+  color: gray;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
 }
-#btn{
-  margin-top:30px;
+#btn {
+  margin-top: 30px;
   height: 45px;
-  padding:5px;
+  padding: 7px;
   font: bold;
-  font-size:25px;
+  font-size: 25px;
   align-items: center;
   text-align: center;
   border-radius: 2rem;
@@ -50,14 +49,13 @@ p{
   background-color: rgb(8, 231, 175);
   font-family: serif;
   font-weight: bold;
+  margin-bottom: 10px;
 }
-#btn:hover{
-    background-color: rgb(20, 100, 80);
-    cursor: pointer;
+#btn:hover {
+  background-color: rgb(20, 100, 80);
+  cursor: pointer;
 }
-.result{
-    margin-top:60px;
-    font-size: 40px;
-   
-   
+.result {
+  margin-top: 60px;
+  font-size: 40px;
 }
