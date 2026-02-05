@@ -1,2 +1,3 @@
 let d=new Date();
-let olympicDate=new Date()
+console.log(d.toDateString());
+console.log(d.getDate());

@@ -24,7 +24,7 @@ function startCountdown() {
       document.getElementById("seconds").innerText = 0;
       return;
     }
-
+//calculating days,hours,minutes and seconds
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
