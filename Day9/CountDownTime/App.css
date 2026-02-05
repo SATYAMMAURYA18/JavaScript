@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  font-size: 16px;
+}
+
+button {
+  background: #4e73df;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.timer div {
+  background: #f8f9fc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 70px;
+}
+
+.timer span {
+  font-size: 22px;
+  font-weight: bold;
+}
