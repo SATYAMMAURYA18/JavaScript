@@ -24,3 +24,16 @@ let obj2={r:54,n:78,o:87};
 
 let p={...obj,...obj1,...obj2};
 console.log(p);
+
+class uesr_Info{
+    constructor(name,id,roll_number)
+    {
+        this.name=name,
+        this.id=id,
+        this.roll_number=roll_number
+    }
+}
+
+
+const person1=uesr_Info("satyam",101,24363);
+console.log(person1);

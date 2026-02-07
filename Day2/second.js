@@ -98,10 +98,10 @@
 // Non Primitive Data type
 // array, object, function
 
-let arr = [10,20,11,"Rohit",true];
-console.log(typeof arr);
+// let arr = [10,20,11,"Rohit",true];
+// console.log(typeof arr);
 
-console.log(arr);
+// console.log(arr);
 
 // Rohit 12312 18 gen
 
@@ -125,11 +125,11 @@ console.log(arr);
 
 // Primitive data type is immutable
 
-let a = 10;
-let b = a;
+// let a = 10;
+// let b = a;
 
-b = 20;
-console.log(a,b);
+// b = 20;
+// console.log(a,b);
 
 // let str = "Rohit";
 // str = "Mohan";
