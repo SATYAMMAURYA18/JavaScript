@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Attendance Tracker</h1>
+
+    <div class="date">
+      <strong>Date:</strong>
+      <span id="currentDate"></span>
+    </div>
+
+    <div class="add-student">
+      <input type="text" id="studentName" placeholder="Enter student name">
+      <button onclick="addStudent()">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="studentList"></tbody>
+    </table>
+
+    <button class="save-btn" onclick="saveAttendance()">Save Attendance</button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
