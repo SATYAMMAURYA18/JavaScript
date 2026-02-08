@@ -70,3 +70,25 @@ function saveTask()
     localStorage.setItem("tasks",JSON.stringify(tasks));
 }
 renderTasks();//refresh krne p task disappear nhi hoga..
+const motivationalQuotes = [
+  "Believe in yourself and all that you are.",
+  "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
+  "Don’t watch the clock; do what it does. Keep going.",
+  "Dream big. Start small. Act now.",
+  "Your future depends on what you do today.",
+  "Hard work beats talent when talent doesn’t work hard.",
+  "Push yourself, because no one else is going to do it for you.",
+  "Every expert was once a beginner.",
+  "Small progress is still progress.",
+  "Failure is not the opposite of success; it’s part of success.",
+  "Stay focused. Stay disciplined. Stay hungry.",
+  "Great things never come from comfort zones.",
+  "Your only limit is your mindset.",
+  "Do something today that your future self will thank you for.",
+  "Consistency creates confidence."
+];
+document.getElementById('quoteBtn').addEventListener("click",()=>{
+const randomIndex=Math.floor(Math.random()*motivationalQuotes.length);
+document.getElementById('quote').innerText=motivationalQuotes[randomIndex];
+document.getElementById('quoteBtn').style.visibility="hidden";
+})
