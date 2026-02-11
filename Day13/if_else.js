@@ -92,3 +92,18 @@ const prime_number=(number)=>{
 }
 const prime_check=prime_number(36);
 console.log(prime_check);
+
+//grade checking using switch;
+const grade=(marks)=>{
+    switch(Math.floor(marks/10))
+    {
+        case 9:{
+            return 'A';
+        }
+        case 8: return 'B';
+        case 7: return 'c';
+        case 6: return 'D';
+        default: return 'F';
+    }
+}
+console.log(grade(95));
