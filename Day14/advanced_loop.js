@@ -27,3 +27,20 @@ for(let key in a)
 {
     console.log(key,a[key]);
 }
+
+//for...each loop
+//for array
+
+let numbers=[10,20,32,43];
+numbers.forEach((num,index)=>{
+    console.log(index,num);
+})
+
+//for object
+let users=[
+    {name:"Satyam", age: 21},
+    {name:"Rahul",age:25}
+]
+users.forEach((user)=>{
+    console.log(user.name,user.age);
+})
