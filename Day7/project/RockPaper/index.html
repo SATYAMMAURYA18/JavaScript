@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rock Paper Scissors</title>
+  <title>Rock Paper Scissors - Anime Edition</title>
   <link rel="stylesheet" href="app.css" />
 </head>
 <body>
@@ -9,18 +9,18 @@
   <div class="card">
     <h1>Rock Paper Scissors</h1>
 
-  <div class="buttons">
-    <button onclick="play('rock')">🪨 Rock</button>
-    <button onclick="play('paper')">📄 Paper</button>
-    <button onclick="play('scissors')">✂️ Scissors</button>
-  </div>
+    <div class="buttons">
+      <button onclick="play('rock')">🪨</button>
+      <button onclick="play('paper')">📄</button>
+      <button onclick="play('scissors')">✂️</button>
+    </div>
 
-  <h2 id="result">Make your move!</h2>
-  <p id="computer-choice"></p>
+    <h2 id="result">Ready? Fight!</h2>
+    <p id="computer-choice">Waiting for opponent...</p>
 
-  <h3>Score</h3>
-  <p>You: <span id="user-score">0</span></p>
-  <p>Computer: <span id="comp-score">0</span></p>
+    <h3>Battle Score</h3>
+    <p>You: <span id="user-score">0</span></p>
+    <p>CPU: <span id="comp-score">0</span></p>
   </div>
 
   <script src="app.js"></script>

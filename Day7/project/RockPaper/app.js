@@ -9,7 +9,7 @@ function play(userChoice)
     //computer choice logic
     //for realastic feel we have to set delay
     setTimeout(()=>{
-       document.getElementById("computer-choice").textContent=`Computer Choice : ${computerChoice}`;
+       document.getElementById("computer-choice").textContent=`CPU Choice : ${computerChoice}`;
     },700);
    
     let result="";
