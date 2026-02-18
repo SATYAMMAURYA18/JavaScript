@@ -29,7 +29,7 @@ body::before {
     width: 500px; /* Adjust size as needed */
     height: 80vh;
     /* REPLACE THE URL BELOW WITH YOUR ANIME IMAGE */
-    background: url() no-repeat bottom center/contain;
+    background: url(videoframe_23857.png) no-repeat bottom center/contain;
     opacity: 0.7;
     z-index: 0;
     pointer-events: none;
@@ -75,7 +75,10 @@ body::before {
     display: block;
     box-shadow: 0 0 20px rgba(255, 81, 47, 0.5);
 }
-
+.card h1{
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
 /* Inputs with frosted glass effect */
 .card input {
     width: 100%;
@@ -124,8 +127,10 @@ body::before {
 }
 
 /* Neon Result Text */
-#cal {
-    margin-top: 25px;
+
+
+#cal{
+     margin-top: 25px;
     font-size: 20px;
     font-weight: 600;
     color: #00f2fe;
