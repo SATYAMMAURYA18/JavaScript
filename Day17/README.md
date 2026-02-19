@@ -14,7 +14,7 @@ A simple and responsive BMI Calculator built using HTML, CSS, and JavaScript.<br
 - JavaScript<br><br>
 
 ## 📸 Demo<br>
-Live Link: https://your-link.netlify.app/<br><br>
+Live Link: https://bmi-calculator63.netlify.app/<br><br>
 
 ## 📂 Project Structure<br>
 - index.html<br>
