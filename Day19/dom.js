@@ -1,0 +1,9 @@
+let header=document.getElementById('first');
+header.textContent="hii";
+header.style.backgroundColor="orange";
+header.style.borderRadius="5px";
+header.style.padding="10px";
+header.style.paddingLeft="120px";
+header.style.color="#2b09ee";
+header.style.alignItems="center";
+header.style.border="2px black solid";
