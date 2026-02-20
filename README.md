@@ -17,6 +17,12 @@ The focus of this repository is to strengthen **core JavaScript concepts**, impr
 🔹 HTML5 <br>
 🔹 CSS3 <br><br>
 
+## 🔗 Project Link live demo <br>
+📌 LA28 Countdown-https://la28-countdown-road-to-glory63.netlify.app/ <br>
+📌 BMI Calculator-https://bmi-calculator63.netlify.app/ <br>
+📌 Rock Paper Scissors-https://rock-paper-scissors63.netlify.app/ <br>
+📌 Number Guessing Game-https://guess-my-number63.netlify.app/ <br>
+
 ## 📂 Projects & Concepts Included <br>
 
 ✔ Variables, Data Types & Operators <br>
@@ -35,4 +41,5 @@ The focus of this repository is to strengthen **core JavaScript concepts**, impr
 ✨ Learn how JavaScript works with the DOM <br>
 ✨ Create interactive web applications <br>
 ✨ Prepare for frontend interviews <br><br>
+
 
