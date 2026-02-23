@@ -1,39 +1,71 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: black;
+
+/* IMPORTANT: JS will control background */
+html, body {
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+body {
+    background: #111;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    gap: 20px;
 }
-.root{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-}
-button{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    border: transparent;
-    border-radius: 2.5rem;
-    box-shadow: 0 0 19px rgb(122, 163, 9);
 
+.root {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 30px 40px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
-#red{
-    background-color: red;
+
+.root h1 {
+    color: white;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
 }
-#blue{
-    background-color: blue;
+
+/* Buttons */
+.root button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-#orange{
-    background-color: orange;
+
+.root button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
-#purple{
-    background-color: purple;
+
+.root button:active {
+    transform: scale(1.05);
+}
+
+/* Colors */
+#red {
+    background: #ff4d4d;
+}
+
+#blue {
+    background: #4d79ff;
+}
+
+#orange {
+    background: #ffa500;
+}
+
+#purple {
+    background: #9b59b6;
 }

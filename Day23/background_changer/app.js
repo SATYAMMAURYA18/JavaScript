@@ -21,10 +21,22 @@
 
 //optimise code
 
-const buttons=document.querySelectorAll('button');
-const body=document.body;
-buttons.forEach((btn)=>{
-    btn.addEventListener('click',()=>{
-        body.style.backgroundColor=btn.id;
-    })
-})
+// const buttons=document.querySelectorAll('button');
+// const body=document.body;
+// buttons.forEach((btn)=>{
+//     btn.addEventListener('click',()=>{
+//         body.style.backgroundColor=btn.id;
+//     })
+// })
+
+
+//maximum optimise by using event bubbling.
+const body = document.body;
+const root = document.getElementById('root');
+
+root.addEventListener('click', (e) => {
+  console.log(e.target.tagName);
+  if(e.target.tagName==='BUTTON')
+  body.style.backgroundColor =`${ e.target.id}`;
+});
+
