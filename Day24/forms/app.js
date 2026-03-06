@@ -9,4 +9,8 @@ form.addEventListener('submit',(event)=>{
     data.forEach((value,index)=>{
         console.log(`${index}->${value}`);
     })
+    for(let val of data.keys())
+    {
+        console.log(val.valueOf());
+    }
 })
