@@ -1,5 +1,8 @@
 let turn = "O";
 let total_turn=0;
+let img1=document.getElementById('first');
+let img2=document.getElementById('second');
+img1.style.scale='1.4';
 
 //deciding winner
 let winner = [
@@ -41,6 +44,8 @@ const printer = (event) => {
         return;
       }
       turn = "X";
+      img1.style.scale='1';
+      img2.style.scale='1.5';
     } else {
       element.innerHTML = "X";
       boar_array[element.id] = "X";
@@ -50,6 +55,8 @@ const printer = (event) => {
         return;
       }
       turn = "O";
+      img1.style.scale='1.5';
+        img2.style.scale='1';
     }
     if(total_turn==9)
     {
