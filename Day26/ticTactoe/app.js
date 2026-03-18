@@ -2,7 +2,7 @@ let turn = "O";
 let total_turn=0;
 let img1=document.getElementById('first');
 let img2=document.getElementById('second');
-img1.style.scale='1.4';
+img1.style.scale='1.3';
 
 //deciding winner
 let winner = [
@@ -45,7 +45,7 @@ const printer = (event) => {
       }
       turn = "X";
       img1.style.scale='1';
-      img2.style.scale='1.5';
+      img2.style.scale='1.3';
     } else {
       element.innerHTML = "X";
       boar_array[element.id] = "X";
@@ -55,7 +55,7 @@ const printer = (event) => {
         return;
       }
       turn = "O";
-      img1.style.scale='1.5';
+      img1.style.scale='1.3';
         img2.style.scale='1';
     }
     if(total_turn==9)
@@ -75,6 +75,8 @@ restart.addEventListener('click',()=>{
     })
     turn='O';
     total_turn=0;
+    img1.style.scale="1.5";
+    img2.style.scale="1";
     boar_array=new Array(9).fill('E');
     board.addEventListener("click", printer);
      document.getElementById("winningMessage").innerHTML = "";
