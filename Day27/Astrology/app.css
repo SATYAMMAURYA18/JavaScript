@@ -1,0 +1,89 @@
+:root {
+    --gold: #d4af37;
+    --purple: #2e1a47;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at center, #1b1464, #000000);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    color: var(--gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.input-group, .date-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--gold);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button {
+    background: var(--gold);
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--gold);
+}
+
+.result-card {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+    border: 1px dashed var(--gold);
+    animation: fadeIn 1s ease-in;
+}
+
+.hidden { display: none; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

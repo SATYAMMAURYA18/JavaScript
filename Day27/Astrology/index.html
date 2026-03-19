@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Destiny | Astrology</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <h1>Cosmic Destiny</h1>
+            <p>Discover what the stars have written for you</p>
+        </header>
+
+        <div class="card">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="First Name" required>
+                <input type="text" id="surname" placeholder="Surname" required>
+            </div>
+            
+            <div class="date-group">
+                <input type="number" id="day" placeholder="DD" min="1" max="31">
+                <select id="month">
+                    <option value="" disabled selected>Month</option>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+                <input type="number" id="year" placeholder="YYYY" min="1900" max="2026">
+            </div>
+
+            <button onclick="revealDestiny()">Reveal My Sign</button>
+        </div>
+
+        <div id="result" class="result-card hidden">
+            <h2 id="userName"></h2>
+            <div id="zodiacIcon"></div>
+            <h3 id="zodiacSign"></h3>
+            <p id="horoscope"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
