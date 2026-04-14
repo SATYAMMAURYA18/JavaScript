@@ -24,18 +24,28 @@ function pickupOrder(callback) {
     callback();
   }, 4000);
 }
-function deliverOrder() {
+function deliverOrder(callback) {
   console.log("Delivery is on the way...");
   setTimeout(() => {
     console.log("Ordered dilivered successfully.");
+    callback();
   }, 3000);
+}
+function rating()
+{
+  console.log("Give rating us from one to 5");
+  setTimeout(()=>{
+    console.log("Thanks for rating,we are waiting for another order!");
+  },3000);
 }
 
 //now call back ka hell chalu hoga....
 placeOrder(()=>{
     preparingOrder(()=>{
         pickupOrder(()=>{
-            deliverOrder();
+            deliverOrder(()=>{
+              rating()
+            });
         })
     });
 })
